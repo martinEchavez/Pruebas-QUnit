@@ -31,11 +31,19 @@ QUnit.test("Prueba Array", function(assert) {
  * Email
  * Password
  */
-var usuario = new Array();
+/*var usuario = new Array();
 usuario["Id"] = "01";
 usuario["Nombre"] = "Martin";
 usuario["Email"] = "m@gmail.com";
-usuario["Password"] = "1234";
+usuario["Password"] = "1234";*/
+// Con notación Json
+var usuario = {
+ "Id" : "01",
+ "Nombre" : "Juan",
+ "Email" : "m@gmail.com",
+ "Password" : "1234"
+};
+
 QUnit.test("Prueba usuario", function(assert) {
  assert.equal(usuario["Id"], "01", "El Id es correcto");
  assert.equal(usuario.Nombre, "Martin", "El Nombre es correcto");//Se puede comparar de las dos formas.
